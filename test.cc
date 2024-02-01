@@ -30,9 +30,9 @@ int main(void){
     if(val != -1){
         std::cout << "TECUSB device is opened -> " << val  << std::endl;
         if(TECUSB_ResetDevice_0(val))
-            std::cout << "DEVICE INITILED OK " << std::endl;
+            std::cout << "DEVICE INITIALED OK " << std::endl;
         else
-            std::cout << "DEVICE INITILED FAIL " << std::endl;
+            std::cout << "DEVICE INITIALED FAIL " << std::endl;
     }
     else if(val = -1)std::cout << "TECUSB device open FAILED" << std::endl;
 
