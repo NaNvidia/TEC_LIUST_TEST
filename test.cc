@@ -46,10 +46,10 @@ int main(void){
  OVERLAPPED ovl;
 
 //line mode select
-    snprintf(wbf,1024,"\033\\?LS4");
-    tmp = WriteFile(liu1,&wbf,nwrite,&nwritn,NULL);    
-    memset(wbf, '\0', sizeof(wbf));
-    tmp = WriteFile(liu1,&wbf,nwrite,&nwritn,NULL);    
+    snprintf(wbf,1024,"\033\\?LS4");                    // 送信用データをwbfに格納
+    tmp = WriteFile(liu1,&wbf,nwrite,&nwritn,NULL);     // 送信実行
+    memset(wbf, '\0', sizeof(wbf));                     // wbf初期化
+    tmp = WriteFile(liu1,&wbf,nwrite,&nwritn,NULL);     // ? 
 
 //brightness
     snprintf(wbf,1024,"\033\\?LD5");
