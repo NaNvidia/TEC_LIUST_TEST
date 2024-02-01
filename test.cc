@@ -80,7 +80,7 @@ int main(void){
     snprintf(wbf,1024,"\033[2J");
     tmp = WriteFile(liu1,&wbf,nwrite,&nwritn,NULL);    
     memset(wbf, '\0', sizeof(wbf));
-    snprintf(wbf,1024,"computer");
+    snprintf(wbf,1024,"");
     tmp = WriteFile(liu1,&wbf,nwrite,&nwritn,NULL);    
     memset(wbf, '\0', sizeof(wbf));
 
